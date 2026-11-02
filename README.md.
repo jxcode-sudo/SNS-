@@ -1,0 +1,64 @@
+Group 2 – Steganography: The Locked Memo
+
+Project Overview
+
+This project demonstrates image steganography using the Least Significant Bit (LSB) technique with key-based scattered embedding.
+
+The objective is to hide a secret message inside image pixel values by modifying their least significant bits. A key-based position formula is used to scatter the embedding locations, making it more difficult for an attacker to identify the hidden message.
+
+Key Features
+
+- Key generation using mathematical concepts.
+- Key-based scattered pixel positioning.
+- LSB-based secret message embedding.
+- Modification of pixel values to encode hidden information.
+- Message extraction and recovery.
+- Attacker simulation through key-search attempts.
+- Verification of the recovered ASCII message.
+
+Methodology
+
+The activity uses the following position formula:
+
+"position(i) = (key × i + offset) mod N"
+
+Where:
+
+- "key" determines the embedding order.
+- "offset" determines the starting position.
+- "N" represents the number of available pixel positions.
+- "i" represents the iteration index.
+
+The secret message is converted into its binary ASCII representation and embedded into the least significant bits of selected pixel values.
+
+Project Workflow
+
+1. Generate a suitable key.
+2. Calculate scattered pixel positions.
+3. Embed the secret message using LSB modification.
+4. Transfer the modified pixel values.
+5. Extract the hidden message using the shared key and formula.
+6. Perform attacker attempts to identify the correct key.
+7. Verify the recovered message.
+
+Demonstration Video
+
+"Watch the Project Demonstration" (https://drive.google.com/file/d/14KupLU0INC4Sk6OBXaeUWZ7UDz4SkAdz/view?usp=drivesdk)
+
+Project Documentation
+
+The activity packet and working calculations are included in the project documentation.
+
+Learning Outcomes
+
+- Understanding image steganography.
+- Learning the LSB data-hiding technique.
+- Understanding key-based scattered embedding.
+- Practising binary and ASCII conversion.
+- Understanding basic steganalysis and key-recovery attempts.
+
+---
+
+Project: The Locked Memo – Steganography
+Group: 2
+Subject: Systems and Network Security (SNS)
